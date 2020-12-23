@@ -31,9 +31,10 @@ public class CoronaAPIController {
 		return "DistricWise";
 	}
 	
+	@CrossOrigin(origins = "http://www.springservice.xyz")
 	@GetMapping("/get")
 	public String getReturn() {
-		return "Hello";
+		return "Hello bro";
 	}
 
 }
