@@ -1,5 +1,6 @@
 package com.poc.corona.tracker.controller;
 
+import java.util.Date;
 import java.util.HashMap;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -34,6 +35,7 @@ public class CoronaAPIController {
 	@CrossOrigin(origins = "http://www.springservice.xyz")
 	@GetMapping("/get")
 	public String getReturn() {
+		System.out.println("Hey I got a request at :  "+ new Date());
 		return "Hello bro";
 	}
 
